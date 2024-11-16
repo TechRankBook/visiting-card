@@ -3,102 +3,99 @@ import Container from "react-bootstrap/Container";
 
 const AboutUs = () => {
   return (
-    <div className="container">
+    <div className="about-us-container" style={{ fontFamily: "Arial, sans-serif" }}>
+      <style>
+        {`
+          .banner-section {
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            position: relative;
+            color: white;
+          }
+          .banner-title {
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 2rem;
+            margin-top: 80px;
+          }
+          .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -60px;
+            left: 20px;
+            border: 4px solid blue;
+          }
+          .contact-buttons {
+            text-align: right;
+            margin-top: 100px;
+            padding-right: 15px;
+          }
+          .contact-button {
+            display: inline-block;
+            width: 90px;
+            border-radius: 10px;
+            padding: 8px 0;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          .call-button {
+            background-color: #ffc107;
+            color: black;
+          }
+          .whatsapp-button, .save-button {
+            background-color: #007bff;
+            color: white;
+          }
+          .about-us-content {
+            margin-top: 30px;
+            padding: 20px;
+          }
+          .about-us-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+          }
+          .about-us-text {
+            font-size: 16px;
+            line-height: 1.6;
+          }
+        `}
+      </style>
+
       {/* Banner Section with Background Image */}
       <div
+        className="banner-section"
         style={{
-          backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/000/677/302/large_2x/abstract-technology-banner-background.jpg')`, // Replace with your image URL
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "200px",
-          position: "relative",
-          color: "white",
+          backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/000/677/302/large_2x/abstract-technology-banner-background.jpg')`,
         }}
-        className="d-flex align-items-center justify-content-center"
       >
-        <h1
-          style={{ zIndex: 1, textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
-        ></h1>
+        <h1 className="banner-title">Welcome to Rank Book</h1>
 
         {/* Rounded Profile Image */}
         <img
-          src="/Assets/rblogo.png"
-          alt="Profile"
-          style={{
-            width: "120px",
-            height: "120px",
-            borderRadius: "50%",
-            position: "absolute",
-            bottom: "-60px",
-            left: "20px",
-            border: "4px solid blue",
-          }}
+          src={`${process.env.PUBLIC_URL}/Assets/rblogo.png`}
+          alt="Rank Book Logo"
+          className="profile-image"
         />
       </div>
 
-      <div
-        style={{
-          position: "absolute",
-          bottom: "325px",
-          right: "15px",
-          textAlign: "right",
-        }}
-      >
-        <a
-          href="tel:+916363688572" // Replace with your phone number
-          style={{
-            display: "inline-block",
-            width: "90px",
-            marginBottom: "10px",
-            padding: "8px 0",
-            borderRadius: "10px",
-            backgroundColor: "#ffc107",
-            textAlign: "center",
-            color: "black",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
+      {/* Contact Buttons */}
+      <div className="contact-buttons">
+        <a href="tel:+918884555677" className="contact-button call-button">
           Call Us
         </a>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            gap: "10px",
-          }}
-        >
-          <a
-            href="https://wa.me/8884555677 " // Replace with your WhatsApp number
-            style={{
-              display: "inline-block",
-              width: "90px",
-              borderRadius: "10px",
-              padding: "8px 0",
-              backgroundColor: "#007bff",
-              color: "white",
-              textAlign: "center",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
+        <div className="social-buttons" style={{ display: "flex", justifyContent: "flex-end", gap: "10px" }}>
+          <a href="https://wa.me/+918884555677" className="contact-button whatsapp-button">
             WhatsApp
           </a>
           <a
-            href="/rankbook_contact.vcf" // Path to your vCard file
+            href={`${process.env.PUBLIC_URL}/rankbook_contact.vcf`}
             download="RankBookCompany.vcf"
-            style={{
-              display: "inline-block",
-              width: "90px",
-              borderRadius: "10px",
-              padding: "8px 0",
-              backgroundColor: "#007bff",
-              color: "white",
-              textAlign: "center",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
+            className="contact-button save-button"
           >
             Save
           </a>
@@ -106,15 +103,12 @@ const AboutUs = () => {
       </div>
 
       {/* About Us Section */}
-      <br />
-      <br />
-      <Container style={{ marginTop: "30px", padding: "20px" }}>
-        <h1 style={{ fontSize: "24px", marginBottom: "15px" }}>About Us</h1>
-        <p style={{ fontSize: "16px", lineHeight: "1.6" }}>
-          Rank Book learning and Software Solutions has redefined the process of
-          recruitment to a predictably accurate process with defined parameters
-          for matching job skills of potential candidates with the job profiles
-          of local and international companies.
+      <Container className="about-us-content">
+        <h1 className="about-us-title">About Us</h1>
+        <p className="about-us-text">
+          Rank Book Learning and Software Solutions has redefined the process of recruitment to a predictably accurate
+          process with defined parameters for matching job skills of potential candidates with the job profiles of local
+          and international companies.
         </p>
       </Container>
     </div>
