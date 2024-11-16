@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 
 const AboutUs = () => {
@@ -23,7 +22,7 @@ const AboutUs = () => {
 
         {/* Rounded Profile Image */}
         <img
-          src="https://tse2.mm.bing.net/th?id=OIP.XDfqjPnddZB49KTWcv_j3gHaEK&pid=Api&P=0&h=180"
+          src="/Assets/rblogo.png"
           alt="Profile"
           style={{
             width: "120px",
@@ -45,17 +44,23 @@ const AboutUs = () => {
           textAlign: "right",
         }}
       >
-        <Button
-          variant="warning"
+        <a
+          href="tel:+916363688572" // Replace with your phone number
           style={{
+            display: "inline-block",
             width: "90px",
             marginBottom: "10px",
-            padding: "0px",
+            padding: "8px 0",
             borderRadius: "10px",
+            backgroundColor: "#ffc107",
+            textAlign: "center",
+            color: "black",
+            textDecoration: "none",
+            fontWeight: "bold",
           }}
         >
           Call Us
-        </Button>
+        </a>
 
         <div
           style={{
@@ -64,28 +69,39 @@ const AboutUs = () => {
             gap: "10px",
           }}
         >
-          <Button
+          <a
+            href="https://wa.me/8884555677 " // Replace with your WhatsApp number
             style={{
+              display: "inline-block",
               width: "90px",
               borderRadius: "10px",
-              padding: "0px",
+              padding: "8px 0",
               backgroundColor: "#007bff",
-              border: "none",
               color: "white",
+              textAlign: "center",
+              textDecoration: "none",
+              fontWeight: "bold",
             }}
           >
             WhatsApp
-          </Button>
-          <Button
-            variant="primary"
+          </a>
+          <a
+            href="/rankbook_contact.vcf" // Path to your vCard file
+            download="RankBookCompany.vcf"
             style={{
+              display: "inline-block",
               width: "90px",
               borderRadius: "10px",
-              padding: "0px",
+              padding: "8px 0",
+              backgroundColor: "#007bff",
+              color: "white",
+              textAlign: "center",
+              textDecoration: "none",
+              fontWeight: "bold",
             }}
           >
             Save
-          </Button>
+          </a>
         </div>
       </div>
 
@@ -98,7 +114,7 @@ const AboutUs = () => {
           Rank Book learning and Software Solutions has redefined the process of
           recruitment to a predictably accurate process with defined parameters
           for matching job skills of potential candidates with the job profiles
-          of local and international companies.
+          of local and international companies.
         </p>
       </Container>
     </div>
