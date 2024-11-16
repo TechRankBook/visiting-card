@@ -1,0 +1,16 @@
+.connect-container {
+  font-family: Arial, sans-serif;
+}
+
+.social-media i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.text-primary {
+  color: #6c3aa8 !important; /* Purple color */
+}
+
+.text-secondary {
+  color: #333 !important;
+}
