@@ -69,10 +69,11 @@ const AboutUs = () => {
       <div
         className="banner-section"
         style={{
+          marginTop: "-80px",
           backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/000/677/302/large_2x/abstract-technology-banner-background.jpg')`,
         }}
       >
-        <h1 className="banner-title">Welcome to Rank Book</h1>
+        <h1 className="banner-title" style={{ textAlign: "center" }}  marginTop="30px">Welcome to Rank Book</h1>
 
         {/* Rounded Profile Image */}
         <img

@@ -7,7 +7,7 @@ const RankBookConnect = () => {
     <div className="container">
       <Container className="text-center container">
         <h2 className="mb-4 light-purple">Connect us</h2>
-        <Row className="mx-5">
+        <Row className="mx-5 g-4">
           {/* Left Column */}
           <Col xs={6} md={6} className="text-start">
             <div className="platform mb-3">
