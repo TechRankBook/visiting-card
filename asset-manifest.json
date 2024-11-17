@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/digital-card/static/css/main.e982ed98.css",
-    "main.js": "/digital-card/static/js/main.01eaed4d.js",
+    "main.js": "/digital-card/static/js/main.3ef74eb6.js",
     "static/js/488.350e2aad.chunk.js": "/digital-card/static/js/488.350e2aad.chunk.js",
     "static/media/fa-solid-900.ttf": "/digital-card/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/digital-card/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/digital-card/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/digital-card/index.html",
     "main.e982ed98.css.map": "/digital-card/static/css/main.e982ed98.css.map",
-    "main.01eaed4d.js.map": "/digital-card/static/js/main.01eaed4d.js.map",
+    "main.3ef74eb6.js.map": "/digital-card/static/js/main.3ef74eb6.js.map",
     "488.350e2aad.chunk.js.map": "/digital-card/static/js/488.350e2aad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e982ed98.css",
-    "static/js/main.01eaed4d.js"
+    "static/js/main.3ef74eb6.js"
   ]
 }
