@@ -19,7 +19,7 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^4.2.4"
   },
-  "homepage": "https://TechRankBook.github.io/digital-card",
+  "homepage": "https://Techrankbook.github.io/cardv",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
