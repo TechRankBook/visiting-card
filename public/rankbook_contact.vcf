@@ -5,5 +5,6 @@ ORG:Rank Book Learning and Software Solutions
 TEL;TYPE=WORK,VOICE:+916363688572
 EMAIL:care@rankbook.in
 URL:http://www.rankbook.in
-ADR:;;Street Address;City;State;Postal Code;Country
+ADR;TYPE=WORK:;;123 Main Street;Amritsar;Punjab;143001;India
+NOTE:RankBook provides innovative solutions for learning and software development.
 END:VCARD
